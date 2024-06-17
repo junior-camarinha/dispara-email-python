@@ -34,9 +34,9 @@ label_email.grid(row=0, column=0, pady=(50, 0), padx=(30,10), sticky=tk.W)
 label_senha = tk.Label(main_frame, text="Digite sua senha", font=2)
 label_senha.grid(row=1, column=0, pady=(30, 0), padx=(30,10), sticky=tk.W)
 
-input_email = tk.Entry(main_frame, width=44, font=2)
+input_email = tk.Entry(main_frame, width=33, font=2)
 input_email.grid(row=0, column=1, padx=(10, 30), pady=(50, 0))
-input_senha = tk.Entry(main_frame,width=44, font=2)
+input_senha = tk.Entry(main_frame,width=33, font=2)
 input_senha.grid(row=1, column=1, padx=(10, 30), pady=(30, 0))
 
 # botões 
