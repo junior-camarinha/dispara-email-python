@@ -1,5 +1,5 @@
 import tkinter as tk
-
+import os
 # Função para lidar com o clique no botão
 def on_button_click():
     print("Botão clicado!")
@@ -13,9 +13,12 @@ janela.geometry("600x300")
 janela.resizable(False, False)
 
 # frames
-
+caminho = os.path.dirname(os.path.abspath(__file__))
+caminho_img = os.path.join(caminho, "app", "background_image.png")
+print(caminho_img)
+print("app/background_image.png")
 # Carregando a imagem de fundo
-background_image = tk.PhotoImage(file="background_image.png")
+background_image = tk.PhotoImage(file=caminho_img)
 
 # Criando um frame principal para cobrir toda a janela
 main_frame = tk.Frame(janela)
